@@ -1,4 +1,4 @@
-# Packet Capture Lab with tcpdump
+# Packet Capture Practice with tcpdump
 
 # Description
  - In this lab I will demonstrate how to access and manage group policies using the Group Policy Management Tool. This application allows you to set policies that will manage the way machines in your domain behave. You can apply these policies to the whole domain or to separate Organizational Units (OUs). In this instance, I want to add a new policy regarding the Desktop Wallpaper, to the Developers OU that I created in the virtual domain.
