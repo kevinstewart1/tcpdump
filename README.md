@@ -9,23 +9,21 @@
 
 # Walkthrough
 <p align="center">
-Step 1: <br/> Launch Group Policy Management Application 
+Let's Start! <br/> To use tcpdump to start listening for any packets on the interface, I'll enter the command "sudo tcpdump -i eth0"
   <br/>
-  <img src="https://i.imgur.com/AxJSw8l.jpg" height="25%" width="30%"
+  <img src="https://i.imgur.com/mgbNLIR.png" height="50%" width="50%"
 <br/>
   <br />
   <br/>
-  Step 2:
-  <br /> 
-  I’ll expand the tree until I’ve reached the example domain tree and find the Developers OU inside it. To create a new policy, right click on the Developer option and select the first menu entry: Create a GPO in this domain and Link it here.<br/>
-  <img src="https://i.imgur.com/098Na3c.jpg" height="70%" width="70%"
+This will output some basic information about packets it sees. It'll continue to do this until we tell it to stop. <br/> Press Ctrl+C to stop the stream. You can see that once tcpdump exits, it prints a summary of the capture performed, showing the number of packets captured, filtered, or dropped. <br/>
+  <img src="https://i.imgur.com/tTqSqpH.png" height="70%" width="70%"
 <br />
 <br />
 <br/>
-Step 3:
 <br/>
- When you click this option, you will be prompted to set a name for the policy and once you do, the policy will get added to the OU.<br/>
-  <img src="https://i.imgur.com/gVgFNuL.jpg" height="60%" width="60%"
+To enable a more detailed analysis, I can use the -v flag to enable more verbose output. Tcpdump will attempt to perform reverse DNS lookups to resolve IP addresses to hostnames, as well as replace port numbers with commonly associated service names. I can disable this using the -n flag. By using this flag I can avoid generating additional traffic from the DNS lookups, and to speed up the analysis. <br/> I will use this command this time: "sudo tcpdump -i eth0 -vn" 
+ <br/>
+  <img src="https://i.imgur.com/Fyk9uJP.png" height="60%" width="60%"
   <br/>
   <br />
 <br/>
