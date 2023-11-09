@@ -27,19 +27,17 @@ To enable a more detailed analysis, I can use the -v flag to enable more verbose
   <br/>
   <br />
 <br/>
-Step 4:
 <br/>
-I want to set a default wallpaper for the machines in the Developers OU, so we will call our policy "New Wallpaper". Once created, I want to edit the policy. To do this, right-click on the entry and click on the first menu entry “Edit".
+Now I can see that the output now provides many more details for each packet.
  <br/>
-  <img src="https://i.imgur.com/clHscZw.jpg" height="80%" width="80%"
+  <img src="https://i.imgur.com/s5MomRd.png" height="80%" width="80%"
   <br/>
   <br />
 <br/>
-Step 5:
-<br/>
-Since I want to set the wallpaper, I need to navigate to this setting by going to: <br/> 
-[User Configuration > Policies > Administrative Templates > Desktop > Desktop] <br/>
-This will open a list of possible settings that I can configure, including the Desktop Wallpaper. <br/> To set the wallpaper, double-click on the "Desktop Wallpaper" entry.
+Filtering: <br/>
+Tcpdump also has a feature for filtering packets, so I can capture only the traffic that I really want to analyze. I'll use filtering to only capture DNS traffic to a specific DNS server. 
+ <br/> I will use the command "sudo tcpdump -i eth0 -vn host 8.8.8.8 and port 53 &". 
+ <br/> This command specifies that I only want packets where the source or destination IP address matches the address 8.8.8.8 and also specifies that I only want to see packets where the source or destination port matches port 53. 
  <br/>
   <img src="https://i.imgur.com/f2PcdIh.jpg" height="80%" width="80%"
   <br/>
