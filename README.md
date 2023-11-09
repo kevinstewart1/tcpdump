@@ -51,10 +51,11 @@ To list all running jobs, I will use the command: <br/>
   <br/>
   <br />
 <br/>
-Step 7:
-<br/>
-Once I click OK, the group policy is created! To verify this, <br/> I can go back to the Group Policy Management application and click the Settings tab of the new policy and verify the changes were made.
+Now, I'll note down the job ID of the above process (637). <br/> 
+ Next, I will execute a "dig" command. The dig command is a utility used to query a specific DNS server (in this case 8.8.8.8), asking it for the A record for the specified domain (in this case "example.com").
  <br/>
-<img src="https://i.imgur.com/LdqduXS.jpg" height="80%" width="80%"
+"dig @8.8.8.8 A example.com"
+<br/>
+<img src="https://i.imgur.com/gsmAEhy.png" height="60%" width="60%"
   <br/>
  <br/>
