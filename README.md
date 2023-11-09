@@ -30,24 +30,24 @@ To enable a more detailed analysis, I can use the -v flag to enable more verbose
 <br/>
 Now I can see that the output now provides many more details for each packet.
  <br/>
-  <img src="https://i.imgur.com/s5MomRd.png" height="80%" width="80%"
+  <img src="https://i.imgur.com/s5MomRd.png" height="50%" width="50%"
   <br/>
   <br />
 <br/>
 Filtering: <br/>
-Tcpdump also has a feature for filtering packets, so I can capture only the traffic that I really want to analyze. I'll use filtering to only capture DNS traffic to a specific DNS server. 
- <br/> I will use the command "sudo tcpdump -i eth0 -vn host 8.8.8.8 and port 53 &". 
+Tcpdump also has a feature for filtering packets. With this feature I can capture only the traffic that I really want to analyze. I'll use filtering to capture DNS traffic to a specific DNS server. I will use the command:
+ <br/> "sudo tcpdump -i eth0 -vn host 8.8.8.8 and port 53 &" 
+ <br/>
  <br/> This command specifies that I only want packets where the source or destination IP address matches the address 8.8.8.8 and also specifies that I only want to see packets where the source or destination port matches port 53. 
  <br/>
-  <img src="https://i.imgur.com/f2PcdIh.jpg" height="80%" width="80%"
+  <img src="https://i.imgur.com/PKBmdUK.png" height="50%" width="50%"
   <br/>
   <br />
 <br/>
-Step 6:
-<br/>
-The window that opens allows you to set the wallpaper. <br/> Click on the “Enabled” button and then enter the file path for the wallpaper.
+To list all running jobs, I will use the command: <br/>
+ "jobs -l"
  <br/>
-<img src="https://i.imgur.com/XgBinZL.jpg" height="50%" width="50%"
+<img src="https://i.imgur.com/dbqJBYl.png" height="60%" width="60%"
   <br/>
   <br />
 <br/>
