@@ -15,7 +15,7 @@ Let's Start! <br/> To use tcpdump to start listening for any packets on the inte
 <br/>
   <br />
   <br/>
-This will output some basic information about packets it sees. It'll continue to do this until we tell it to stop. <br/> Press Ctrl+C to stop the stream. You can see that once tcpdump exits, it prints a summary of the capture performed, showing the number of packets captured, filtered, or dropped. <br/>
+This will output some basic information about packets it sees. It'll continue to do this until we tell it to stop. <br/> Using Ctrl+C will stop the stream. You can see that once tcpdump stops, it prints a summary of the capture performed, showing the number of packets captured, filtered, or dropped. <br/>
   <img src="https://i.imgur.com/tTqSqpH.png" height="70%" width="70%"
 <br />
 <br />
