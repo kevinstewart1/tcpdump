@@ -60,4 +60,12 @@ asking it for the A record for the specified domain (in this case "example.com")
 <br/>
 <img src="https://i.imgur.com/gsmAEhy.png" height="60%" width="60%"
   <br/>
+ <img src="https://i.imgur.com/QHDqEOR.png" height="60%" width="60%" 
+  <br/>
+ <br/>
+ <br/>
+ Once that's done, I'll use the job ID that I noted down earlier to bring the process to foreground with the following command: fg % 637
+ <br/>
+<img src="https://i.imgur.com/9yYQmAI.png" height="60%" width="60%"
+  <br/>
  <br/>
