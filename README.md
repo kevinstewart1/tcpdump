@@ -20,13 +20,11 @@ This will output some basic information about packets it sees. It'll continue to
 <br />
 <br />
 <br/>
-<br/>
 To enable a more detailed analysis, I can use the -v flag to enable more verbose output. Tcpdump will attempt to perform reverse DNS lookups to resolve IP addresses to hostnames, as well as replace port numbers with commonly associated service names. I can disable this using the -n flag. By using this flag I can avoid generating additional traffic from the DNS lookups, and to speed up the analysis. <br/> I will use this command this time: "sudo tcpdump -i eth0 -vn" 
  <br/>
   <img src="https://i.imgur.com/Fyk9uJP.png" height="60%" width="60%"
   <br/>
   <br />
-<br/>
 <br/>
 Now I can see that the output now provides many more details for each packet.
  <br/>
