@@ -65,4 +65,5 @@ asking it for the A record for the specified domain (in this case "example.com")
  <br/>
 <img src="https://i.imgur.com/9yYQmAI.png" height="60%" width="60%"
   <br/>
- <br/>
+ <img src="https://i.imgur.com/zKA6moX.png" height="60%" width="60%"
+  <br/>
