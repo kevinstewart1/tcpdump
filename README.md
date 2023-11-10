@@ -65,12 +65,9 @@ asking it for the A record for the specified domain (in this case "example.com")
  <br/>
 <img src="https://i.imgur.com/9yYQmAI.png" height="60%" width="60%"
   <br/>
- <img src="https://i.imgur.com/zKA6moX.png" height="60%" width="60%"
-  <br/>
   <br/>
  <br/>
-Now, you will see two captured packets, as our filter rules should filter out any other traffic.
-The first one is the DNS query, which is our question (from the process running on the terminal) going to the server. Note that, in this case, the traffic is UDP. Tcpdump's analysis of the DNS query begins right after the UDP checksum field. It starts with the DNS ID number, followed by some UDP options, then the query type (in this case A? which means we're asking for an A record). Next is the domain name we're interested in (example.com)
+We see two captured packets, as our filter rules filtered out any other traffic.
  <br/>
 <img src="https://i.imgur.com/zKA6moX.png" height="60%" width="60%"
   <br/>
