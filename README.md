@@ -42,8 +42,7 @@ Tcpdump also has a feature for filtering packets. With this feature I can captur
   <br/>
   <br />
 <br/>
-To list all running jobs, I will use the command: <br/>
- "jobs -l"
+To list all running jobs, I will use the command: "jobs -l"
  <br/>
 <img src="https://i.imgur.com/dbqJBYl.png" height="60%" width="60%"
   <br/>
