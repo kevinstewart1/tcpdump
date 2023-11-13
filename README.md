@@ -92,5 +92,14 @@ Once that's done, use the job ID to bring the process to foreground with the fol
 <img src="https://i.imgur.com/IGVVZLN.png" height="60%" width="60%"<br/>
 <br/>
 <br/>
-Using CTRL+C will stop the process and it should return a summary of the number of packets captured. <br/>
+Using CTRL+C will stop the process and it should return a summary of the number of packets captured. Using the command "sudo tcpdump -i eth0 port 80 -w http.pcap" will generate a binary file containing the packets we just captured, called http.pcap.
+ <br/>
 <img src="https://i.imgur.com/RaiYTpy.png" height="60%" width="60%"<br/>
+<br/>
+<br/>
+We can read from this file using tcpdump now, using this command: "tcpdump -r http.pcap -nv"
+<img src="https://i.imgur.com/BDDcJof.png" height="60%" width="60%"<br/>
+ <br/>
+ <br/>
+ Reading that file we can see there's information about the packets created when I pulled down the html from example.com. Tcpdump writes full packets to the file, not just the text-based analysis that it prints to the screen. For example, in the output you can see the html that was returned as the body of the original query in the terminal.
+ <img src="https://i.imgur.com/rNnnnEJ.png" height="60%" width="60%"<br/>
